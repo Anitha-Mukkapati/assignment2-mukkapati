@@ -39,3 +39,46 @@
 > "No problem can be solved from the same level of consciousness that created it."
 > Author:*Albert Einstein*
 
+----
+# create a new section about code Fencing 
+Dynamic programming is both a mathematical optimization method and a computer programming method. The method was developed by Richard Bellman in the 1950s and has found applications in numerous fields, from aerospace engineering to economics.quick-link to the source code <https://en.wikipedia.org/wiki/Dynamic_programming>
+```
+int zero_matrix(vector<vector<int>> a) {
+    int n = a.size();
+    int m = a[0].size();
+
+    int ans = 0;
+    vector<int> d(m, -1), d1(m), d2(m);
+    stack<int> st;
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < m; ++j) {
+            if (a[i][j] == 1)
+                d[j] = i;
+        }
+
+        for (int j = 0; j < m; ++j) {
+            while (!st.empty() && d[st.top()] <= d[j])
+                st.pop();
+            d1[j] = st.empty() ? -1 : st.top();
+            st.push(j);
+        }
+        while (!st.empty())
+            st.pop();
+
+        for (int j = m - 1; j >= 0; --j) {
+            while (!st.empty() && d[st.top()] <= d[j])
+                st.pop();
+            d2[j] = st.empty() ? m : st.top();
+            st.push(j);
+        }
+        while (!st.empty())
+            st.pop();
+
+        for (int j = 0; j < m; ++j)
+            ans = max(ans, (i - d[j]) * (d2[j] - d1[j] - 1));
+    }
+    return ans;
+}
+
+```
+quick-link to the source code <https://cp-algorithms.com/dynamic_programming/zero_matrix.html>
