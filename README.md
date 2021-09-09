@@ -19,3 +19,15 @@
   * campaigning
 
   **[LinktoAboutme.md](AboutMe.md)**
+
+  # Heading about creating a table food/drinks
+
+  Introduction:
+   The following is to create a table with at least 4food/drinksthat you would recommend someone try.Include a short paragraph that introduces the table.
+
+|Mandatory  |fav1       |fav2      |fav3         |fav4      |
+|:-------:  | :-------: | :-------:| :--------:  | :-------:|
+|food       |chicken    |Idly      |panipuri     |Drink     |
+|location   |guntur     |Vijaywada |hyderbad     |Thumps    |
+|Type       |Spicy      | with Ghee|1 plate      |Large     |
+|Amout      |50-40      |40-30     |30-20        |20-10     |    
