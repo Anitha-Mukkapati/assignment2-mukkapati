@@ -30,4 +30,12 @@
 |food       |chicken    |Idly      |panipuri     |Drink     |
 |location   |guntur     |Vijaywada |hyderbad     |Thumps    |
 |Type       |Spicy      | with Ghee|1 plate      |Large     |
-|Amout      |50-40      |40-30     |30-20        |20-10     |    
+|Amout      |50-40      |40-30     |30-20        |20-10     | 
+
+---
+# quotes section
+>"Life is like riding a bicycle. To keep your balance you must keep moving."
+>Author:*Albert Einstein* <br>
+> "No problem can be solved from the same level of consciousness that created it."
+> Author:*Albert Einstein*
+
